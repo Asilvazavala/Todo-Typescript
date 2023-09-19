@@ -64,7 +64,7 @@ const App = (): JSX.Element => {
     return todo
   })
 
-  const handleAddTodo = ({ title }: TodoTitle): void => {
+  const handleAddTodo = (title: TodoTitle): void => {
     const newTodo = {
       title,
       id: crypto.randomUUID(),
